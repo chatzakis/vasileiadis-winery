@@ -1,0 +1,544 @@
+/* Change color and Fonts in root ↙ */
+:root {
+    --primary: #C69382;
+    --secontary: #924E43;
+    --accent: #600A13;
+    --darker-red: #41060b;
+    --light-background: #ebcfc6;
+    --button-background: #ffffff77;
+    --overlay-red: #600A13bb;
+    --overlay-green: #98ab65bb;
+    --header-font-2: "Ubuntu", sans-serif;
+
+}
+
+body {
+    font-family: "Helvetica", Sans-serif;
+    font-size: 1.1rem;
+}
+
+.row {
+    margin: 0;
+}
+
+#title {
+    background-color: var(--primary);
+    color: white;
+    padding: 0;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+
+h2 {
+    font-family: var(--header-font-2);
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+h3 {
+    font-family: var(--header-font-2);
+    font-size: 2rem;
+}
+
+section {
+    padding: 70px 15%;
+}
+
+#title .container-fluid {
+    padding: 0;
+}
+
+.banner-image {
+    padding: 0;
+    width: 100%;
+}
+
+/* Lang Navigation */
+.nav-link {
+    color: #ffffffaa;
+}
+
+.nav-link:hover {
+    color: #ffffffcc;
+}
+
+.nav-link.active {
+    color: #ffffff;
+}
+
+.lan-selector a {
+    padding: 8px;
+    text-align: center;
+}
+
+.lan-selector {
+    width: fit-content;
+    margin: 0 auto 0 0;
+    background-color: var(--overlay-red);
+}
+
+/* Features section */
+#features {
+    background-color: white;
+    /* background-image */
+    background-image: url("../images/wine-stain.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left center;
+}
+
+#features .container-fluid {
+    position: relative;
+}
+
+#features .fa-solid {
+    padding: 20px;
+    color: var(--primary);
+}
+
+#features .fa-solid:hover {
+    color: var(--secontary);
+    transform: scale(1.2);
+    transition: transform 0.5s;
+}
+
+#features h3 {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#features p {
+    color: #333;
+}
+
+/* About us */
+#about-us {
+    background-color: var(--primary);
+    color: white;
+    /* background-image */
+    background-image: url("../images/grapes-scetch.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 1% 95%;
+
+}
+
+.about-us-title {
+    margin-bottom: 20px;
+    color: white;
+}
+
+/* Styled Images */
+.styled-img {
+    width: 100%;
+    border-radius: 15% 0 15% 0;
+    border: solid var(--secontary);
+    border-width: 0 3px 6px 0;
+}
+
+.styled-img:hover {
+    filter: saturate(1.1);
+    transition: transform 0.2s;
+    border-width: 6px 0 0 3px;
+    transition: border-width 0.2s;
+}
+
+/* Journey */
+#journey {
+    padding: 70px 11%;
+    background: var(--light-background);
+    background-image: url("../images/grapes-scetch-3.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 95% 90%;
+}
+
+#journey h2 {
+    text-align: center;
+    padding: 0 10px;
+}
+
+#journey .row {
+    padding: 20px 140px;
+}
+
+/* Bottles */
+#bottles {
+    text-align: center;
+    /* background-image */
+    background-image: url("../images/wine-stain.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left center;
+}
+
+.bottle-card {
+    padding: 20px !important;
+}
+
+.bottle-img {
+    width: 100%;
+}
+
+.bottle-img:hover {
+    transform: scale(0.9);
+    transition: transform 0.5s;
+}
+
+.bottle-title {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* Image Overlay */
+.overlay-container {
+    position: relative;
+}
+
+.overlay-img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--overlay-red);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    border-radius: 12% 0 12% 0;
+}
+
+.overlay.green {
+    background-color: var(--overlay-green);
+}
+
+.overlay-container:hover .overlay {
+    height: 100%;
+}
+
+.overlay-text {
+    color: white;
+    /* position: absolute;
+    top: 18%;
+    left: 22%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-15%, -15%);*/
+    text-align: center;
+    padding: 12%;
+    font-size: 20px;
+}
+
+
+/* Call to Action */
+#cta {
+    background-color: var(--primary);
+    text-align: center;
+    /* background-image */
+    background-image: url("../images/grapes-scetch-2.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 10% 40%;
+}
+
+#cta h3 {
+    color: white;
+    padding-bottom: 50px;
+}
+
+/* Cta buttons */
+.cta-button {
+    --c: var(--accent);
+    color: var(--c);
+    background-color: var(--button-background);
+    font-size: 18px;
+    border: 0.2em solid var(--c);
+    border-radius: 0.6em;
+    width: 16em;
+    height: 4em;
+    /* line-height: 3em; */
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+    margin: 10px 15px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.cta-button span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: var(--c);
+    transform: translateY(200%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.5s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+}
+
+.cta-button:hover {
+    color: white;
+}
+
+.cta-button:hover span {
+    transform: translateY(0) scale(2);
+}
+
+.cta-button span:nth-child(1) {
+    --n: 1;
+}
+
+.cta-button span:nth-child(2) {
+    --n: 2;
+}
+
+.cta-button span:nth-child(3) {
+    --n: 3;
+}
+
+.cta-button span:nth-child(4) {
+    --n: 4;
+}
+
+
+
+/* Footer */
+#footer {
+    background-color: var(--secontary);
+    padding: 10px 15%;
+    text-align: center;
+}
+
+#footer p {
+    margin-bottom: 0;
+    color: white;
+    font-size: 0.9rem;
+}
+
+/* Ken Burn Effects */
+.img-ken-burn {
+    width: 100%;
+    height: calc(100vw * 0.43);
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.img-ken-burn img {
+    width: 100%;
+    animation: move 40s ease;
+    /* Add infinite to loop. */
+
+    -ms-animation: move 40s ease;
+    -webkit-animation: move 40s ease;
+    -0-animation: move 40s ease;
+    -moz-animation: move 40s ease;
+    position: absolute;
+}
+
+@-webkit-keyframes move {
+    0% {
+        -webkit-transform-origin: bottom left;
+        -moz-transform-origin: bottom left;
+        -ms-transform-origin: bottom left;
+        -o-transform-origin: bottom left;
+        transform-origin: bottom left;
+        transform: scale(1.0);
+        -ms-transform: scale(1.0);
+        /* IE 9 */
+
+        -webkit-transform: scale(1.0);
+        /* Safari and Chrome */
+
+        -o-transform: scale(1.0);
+        /* Opera */
+
+        -moz-transform: scale(1.0);
+        /* Firefox */
+    }
+
+    100% {
+        transform: scale(1.15);
+        -ms-transform: scale(1.15);
+        /* IE 9 */
+
+        -webkit-transform: scale(1.15);
+        /* Safari and Chrome */
+
+        -o-transform: scale(1.15);
+        /* Opera */
+
+        -moz-transform: scale(1.15);
+        /* Firefox */
+    }
+}
+
+@media (min-width: 769px) {
+    .mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+
+    h2,
+    h3 {
+        font-size: 2rem;
+    }
+
+    section {
+        padding: 40px 5px;
+    }
+
+    #cta {
+        background-size: 45%;
+        background-position: bottom right;
+    }
+
+    #about-us {
+        background-size: 45%;
+        background-position: bottom right;
+    }
+
+    #bottles,
+    #features {
+        background-size: 45%;
+        background-position: 10% 90%;
+    }
+
+    #journey {
+        padding: 40px 0px;
+        ;
+    }
+
+    #journey .row {
+        padding: 10px 30px;
+    }
+
+    /* Modal Image */
+    .modal-content {
+        width: 100%;
+    }
+
+    .lan-selector a {
+        padding: 5px;
+    }
+
+    .overlay-text {
+        padding: 8%;
+        font-size: 1rem;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    /* Ken Burn  mobile */
+    .img-ken-burn {
+        height: calc(100vw * 0.68);
+    }
+}
+
+/* Style the Image Used to Trigger the Modal */
+#about-img {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#about-img:hover {
+    opacity: 0.9;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 50px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    max-height: 90vh;
+    width: auto;
+    max-width: 70%;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-height: 100px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content,
+#caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
